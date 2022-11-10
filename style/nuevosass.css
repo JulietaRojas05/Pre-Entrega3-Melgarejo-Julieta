@@ -49,33 +49,32 @@ header {
   header .headercatalogo {
     z-index: 9999;
     background-color: whitesmoke; }
-
-.container {
-  max-width: 1400px;
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center; }
-  .container .logo {
+  header .logo {
     margin: 0;
     padding: 25px 30px;
     font-weight: bold;
     color: #3ef566;
     font-size: 1.6em; }
-    .container .logo nav {
-      display: flex;
-      flex-direction: row;
-      text-align: center;
-      padding-bottom: 10px;
-      justify-content: flex-end; }
-      .container .logo nav a {
-        padding: 5px 12px;
-        text-decoration: none;
-        font-weight: bold;
-        color: black; }
-        .container .logo nav a:hover {
-          color: #3ef566; }
+  header .container {
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+  header nav {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding-bottom: 10px;
+    justify-content: flex-end; }
+  header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black; }
+    header a:hover {
+      color: #3ef566; }
 
 /* Media index */
 @media (max-width: 768px) {
@@ -85,10 +84,10 @@ header {
       flex-direction: column;
       justify-content: space-between;
       overflow: hidden; }
-      header .container nav {
-        flex-direction: column;
-        padding-bottom: 25px;
-        justify-content: flex-end; }
+    header nav {
+      flex-direction: column;
+      padding-bottom: 25px;
+      justify-content: flex-end; }
   #nuestros-semillas {
     margin-top: 0; }
     #nuestros-semillas .semillas {
@@ -221,10 +220,6 @@ main .formform {
           transform: translateY(-12px) scale(0.7);
           transform-origin: left top;
           color: #3ef566; }
-        main .formform .form .form-container .form-group .form-input:not(:placeholder-shown) + .form-label {
-          transform: translateY(-12px) scale(0.7);
-          transform-origin: left top;
-          color: #3ef566; }
         main .formform .form .form-container .form-group .form-input {
           width: 100%;
           background: none;
@@ -235,7 +230,7 @@ main .formform {
           outline: none;
           border-bottom: 1px solid;
           font-family: "Roboto", sans-serif; }
-        main .formform .form .form-container .form-group .form-label {
+        main .formform .form .form-container .form-group .form-label, main .formform .form .form-container .form-group .form-input:not(:placeholder-shown) + .form-label {
           color: #706c6c;
           cursor: pointer;
           position: absolute;

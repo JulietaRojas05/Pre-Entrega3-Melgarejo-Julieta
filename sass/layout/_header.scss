@@ -6,7 +6,6 @@ header {
 	}
 	background-color: $colorheader;
 
-	}
 	.container {
 		max-width: 1400px;
 		margin: auto;
@@ -21,6 +20,7 @@ header {
 			font-weight: bold;
 			color: $colorverde;
 			font-size: 1.6em;
+		}
 
 		nav {
 			display: flex;
@@ -28,7 +28,7 @@ header {
 			text-align: center;
 			padding-bottom: 10px;
 			justify-content: flex-end;
-	
+
 			a {
 				padding: 5px 12px;
 				text-decoration: none;
@@ -40,7 +40,6 @@ header {
 			}
 		}
 	}
-
 }
 
 

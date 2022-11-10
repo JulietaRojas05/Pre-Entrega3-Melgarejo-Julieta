@@ -61,9 +61,7 @@ main {
                         &:not(:placeholder-shown) {
                             + {
                                 .form-label {
-                                    transform: translateY(-12px) scale(.7);
-                                    transform-origin: left top;
-                                    color: $colorverde;
+                                    @extend .form-label
                                 }
                             }
                         }
@@ -102,13 +100,9 @@ main {
                         transform: left bottom;
                     }
 
-
                 }
 
-
             }
-
-
 
         }
 

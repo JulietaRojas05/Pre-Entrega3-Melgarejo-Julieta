@@ -1,3 +1,6 @@
+
+
+
 #hero {
     display: flex;
     align-items: center;
@@ -73,11 +76,14 @@
     }
 }
 
+@mixin caracteristicas {
+    display: flex;
+    justify-content: center;
+}
 
 #caracteristicas {
     .container {
-        display: flex;
-        justify-content: center;
+        @include caracteristicas();
         padding: 200px 12px;
 
         li {
